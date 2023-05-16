@@ -5,10 +5,6 @@ body {
     background: #F8F8F8;
 }
 
-/* Убрать полосу прокрутки у элемента */
-.slider__items::-webkit-scrollbar {
-    width: 0;
-}
 .wrapper {
     display: block;
     padding: 0;
@@ -140,6 +136,11 @@ body {
     flex-wrap: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
+}
+
+/* Убрать полосу прокрутки у элемента */
+.slider__items::-webkit-scrollbar {
+    width: 0;
 }
 
 .slider__item {
