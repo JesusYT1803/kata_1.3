@@ -274,7 +274,6 @@ body {
         width: auto;
     }
     .main__text {
-        width: 312px;
         height: 160px;
         line-height: 20px;
     }
@@ -290,9 +289,7 @@ body {
     .main {
         padding: 32px;
     }
-    .main__text {
-        width: 490px;
-    }
+
     .main__title-buttons {
         display: flex;
     }
