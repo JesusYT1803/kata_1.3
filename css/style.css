@@ -64,7 +64,7 @@ body {
 .header__search-layout::before {
     display: block;
     content: '';
-    background: url('/img/icons/divider.svg') no-repeat;
+    background: url('../img/icons/divider.svg') no-repeat;
     width: 3px;
     height: 32px;
     margin: auto 20px auto 4px;
@@ -72,7 +72,7 @@ body {
 
 .header__search::before {
     content: '';
-    background-image: url('/img/icons/divider.svg');
+    background-image: url('../img/icons/divider.svg');
     margin-left: 16px;
 }
 
@@ -99,7 +99,7 @@ body {
     left: -16px;
     content: '';
     display: inline-block;
-    background: url('/img/icons/highlight.svg') no-repeat;
+    background: url('../img/icons/highlight.svg') no-repeat;
     width: 4px;
     height: 42px;
     margin: 0;
@@ -213,7 +213,7 @@ body {
 .main__more-btn::before {
     content: '';
     display: inline-block;
-    background: url('/img/icons/more.svg') 50% 50% no-repeat;
+    background: url('../img/icons/more.svg') 50% 50% no-repeat;
     height: 11px;
     width: 11px;
     margin-right: 16px;
@@ -246,7 +246,7 @@ body {
     .header__logo::before {
         display: inline-block;
         content: '';
-        background: url('/img/icons/divider.svg') no-repeat;
+        background: url('../img/icons/divider.svg') no-repeat;
         width: 3px;
         height: 32px;
         margin: auto 20px auto 4px;
