@@ -1,7 +1,7 @@
 let body = document.querySelector('body');
 let moreBtn = document.querySelector('.service-software__more-text');
 let swiperLayout768 = document.querySelector('.swiper');
-let swiper = undefined;
+let swiper = null;
 
 moreBtn.addEventListener('click', function() {
     swiperLayout768.classList.toggle('swiper--show-all');
@@ -12,7 +12,7 @@ moreBtn.addEventListener('click', function() {
         moreBtn.innerHTML = 'Показать больше';
         moreBtn.classList.remove('service-software__more-text--less');
     }
-})
+});
 
 let useSwiper = function() {
     if (window.innerWidth < 768) {
@@ -34,9 +34,9 @@ let useSwiper = function() {
         }
     } else if (swiper) {
         swiper.destroy(true, true);
-        swiper = undefined;
+        swiper = null;
     }
-}
+};
 
 window.onload = function() {
     useSwiper();
@@ -44,4 +44,14 @@ window.onload = function() {
 
 window.addEventListener('resize', function() {
     useSwiper();
-})
+});
+
+window.addEventListener('keydown', function(event) {
+    if (swiper && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
+        if (event.key === 'ArrowLeft') {
+            swiper.slidePrev();
+        } else if (event.key === 'ArrowRight') {
+            swiper.slideNext();
+        }
+    }
+});

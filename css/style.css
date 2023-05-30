@@ -12,6 +12,7 @@
   border-radius: 50%;
   background: url('../icons/go.svg');
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .go-button:hover {
